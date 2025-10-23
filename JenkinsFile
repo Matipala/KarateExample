@@ -11,14 +11,14 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Clonando el repositorio...'
-                git branch: 'main', url: 'https://github.com/test/KarateExampletest.git'
+                git branch: 'main', url: 'https://github.com/Matipala/KarateExample.git'
             }
         }
 
         stage('Build & Test') {
             steps {
                 echo 'Ejecutando pruebas Karate...'
-                bat 'mvn test -Dkarate.options="--tags @Smock"'
+                bat 'mvn test'
             }
         }
 
