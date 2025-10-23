@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-2-thread-1","id":1},{"content":"pool-2-thread-2","id":2},{"content":"pool-2-thread-3","id":3},{"content":"pool-2-thread-4","id":4},{"content":"pool-2-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"examples\/comments\/comments[1:10]","start":1756350475915,"end":1756350476444,"title":"examples\/comments\/comments[1:10] 23:07:55.915-23:07:56.444 Create Comment","className":"failed"},{"id":2,"group":2,"content":"examples\/comments\/comments[2:27]","start":1756350475915,"end":1756350476445,"title":"examples\/comments\/comments[2:27] 23:07:55.915-23:07:56.445 Get Comments","className":"failed"},{"id":3,"group":3,"content":"examples\/comments\/comments[3:34]","start":1756350475915,"end":1756350476444,"title":"examples\/comments\/comments[3:34] 23:07:55.915-23:07:56.444 Update Comment","className":"failed"},{"id":4,"group":4,"content":"examples\/comments\/comments[4:42]","start":1756350475915,"end":1756350476444,"title":"examples\/comments\/comments[4:42] 23:07:55.915-23:07:56.444 Delete Comment","className":"failed"},{"id":5,"group":5,"content":"examples\/posts\/posts[1:10]","start":1756350475915,"end":1756350476447,"title":"examples\/posts\/posts[1:10] 23:07:55.915-23:07:56.447 Get Posts","className":"failed"},{"id":6,"group":2,"content":"examples\/posts\/posts[2:16]","start":1756350476467,"end":1756350476485,"title":"examples\/posts\/posts[2:16] 23:07:56.467-23:07:56.485 Create Post","className":"failed"},{"id":7,"group":1,"content":"examples\/posts\/posts[3:32]","start":1756350476556,"end":1756350476578,"title":"examples\/posts\/posts[3:32] 23:07:56.556-23:07:56.578 Update Post","className":"failed"},{"id":8,"group":3,"content":"examples\/posts\/posts[4:40]","start":1756350476460,"end":1756350476485,"title":"examples\/posts\/posts[4:40] 23:07:56.460-23:07:56.485 Delete Post","className":"failed"},{"id":9,"group":4,"content":"examples\/todos\/todos[1:10]","start":1756350476461,"end":1756350476480,"title":"examples\/todos\/todos[1:10] 23:07:56.461-23:07:56.480 Create Todo","className":"failed"},{"id":10,"group":5,"content":"examples\/todos\/todos[2:27]","start":1756350476458,"end":1756350476480,"title":"examples\/todos\/todos[2:27] 23:07:56.458-23:07:56.480 Get Todos","className":"failed"},{"id":11,"group":4,"content":"examples\/todos\/todos[3:34]","start":1756350476550,"end":1756350476570,"title":"examples\/todos\/todos[3:34] 23:07:56.550-23:07:56.570 Update Todo","className":"failed"},{"id":12,"group":5,"content":"examples\/todos\/todos[4:43]","start":1756350476550,"end":1756350476563,"title":"examples\/todos\/todos[4:43] 23:07:56.550-23:07:56.563 Delete Todo","className":"failed"},{"id":13,"group":3,"content":"examples\/user\/user[1:9]","start":1756350476493,"end":1756350476499,"title":"examples\/user\/user[1:9] 23:07:56.493-23:07:56.499 Get Users","className":"failed"},{"id":14,"group":2,"content":"examples\/user\/user[2:17]","start":1756350476493,"end":1756350476505,"title":"examples\/user\/user[2:17] 23:07:56.493-23:07:56.505 Create User","className":"failed"},{"id":15,"group":3,"content":"examples\/user\/user[3:34]","start":1756350476508,"end":1756350476519,"title":"examples\/user\/user[3:34] 23:07:56.508-23:07:56.519 Get User Detail","className":"failed"},{"id":16,"group":2,"content":"examples\/user\/user[4:43]","start":1756350476520,"end":1756350476527,"title":"examples\/user\/user[4:43] 23:07:56.520-23:07:56.527 Update User","className":"failed"},{"id":17,"group":3,"content":"examples\/user\/user[5:51]","start":1756350476526,"end":1756350476530,"title":"examples\/user\/user[5:51] 23:07:56.526-23:07:56.530 Delete User","className":"failed"},{"id":18,"group":2,"content":"examples\/users\/users[1:7]","start":1756350476539,"end":1756350477699,"title":"examples\/users\/users[1:7] 23:07:56.539-23:07:57.699 get all users and then get the first examples.user by id"},{"id":19,"group":3,"content":"examples\/users\/users[2:18]","start":1756350476537,"end":1756350476548,"title":"examples\/users\/users[2:18] 23:07:56.537-23:07:56.548 create a examples.user and then get it by id","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

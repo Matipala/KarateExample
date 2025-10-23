@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"582ae21f-2b77-4abe-8ae3-2a16cd8d1784",karate_version:"1.5.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>examples.posts.posts</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">3</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-08-27 11:18:18 p. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>Get Posts</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:14]"><span>[2:14]</span> <span>Create Post</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[3:22]"><span>[3:22]</span> <span>Update Post</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4:29]"><span>[4:29]</span> <span>Delete Post</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/posts/posts.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Post API</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">Get Posts</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1999</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">23:18:14.917 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>headers headers</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userId = karate.get(&#39;userId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">30</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;posts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1943</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">23:18:15.680 request:
+1 &gt; GET https://gorest.co.in/public/v2/posts
+1 &gt; Accept: application/json
+1 &gt; Content-Type: application/json
+1 &gt; Authorization: Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:18:17.420 response time in milliseconds: 1739
+1 &lt; 200
+1 &lt; Date: Thu, 28 Aug 2025 03:18:16 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Etag: W/&quot;ef905e6191e7790b933d8c61b753e4bc&quot;
+1 &lt; Feature-Policy: camera &#39;none&#39;; gyroscope &#39;none&#39;; microphone &#39;none&#39;; usb &#39;none&#39;; fullscreen &#39;self&#39;
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Links-Current: https://gorest.co.in/public/v2/posts?page=1
+1 &lt; X-Links-Next: https://gorest.co.in/public/v2/posts?page=2
+1 &lt; X-Links-Previous: 
+1 &lt; X-Pagination-Limit: 10
+1 &lt; X-Pagination-Page: 1
+1 &lt; X-Pagination-Pages: 300
+1 &lt; X-Pagination-Total: 2998
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Ratelimit-Limit: 90
+1 &lt; X-Ratelimit-Remaining: 89
+1 &lt; X-Ratelimit-Reset: 1
+1 &lt; X-Request-Id: 800bc0e9-3ad6-44e8-8f09-5ac5440bd9e6
+1 &lt; X-Runtime: 0.056321
+1 &lt; X-Xss-Protection: 0
+1 &lt; Cf-Cache-Status: DYNAMIC
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=WoEqUVpbKWP%2FeRf7tsCaL3jdXEPlM%2Fe0Llm9Uwjqm7%2F%2BIIkXgNnLy%2BFazb3%2BJcosRypIPIGrkBr4nD8RBOQVXcGZ2bh%2FCVHChpczxQ%3D%3D&quot;}]}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 9760a90b4e885e0f-GRU
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+[{&quot;id&quot;:235854,&quot;user_id&quot;:8091252,&quot;title&quot;:&quot;Trucido necessitatibus ademptio laborum cras.&quot;,&quot;body&quot;:&quot;Est deporto conatus. Nihil unus statua. Aggero acquiro bene. Baiulus adeptio non. Incidunt vita decretum. Tendo vitae consequuntur. Numquam sortitus tenuis. Et certe ultio. Adnuo abstergo comedo. Bene toties consequatur. Aequitas conatus dolor. Verbum deripio tertius. Voluptates benigne aedificium. Baiulus consequatur advenio. Adiuvo voluptas temptatio. Damno virga stabilis. Venio facere amor. Et certe triduana.&quot;},{&quot;id&quot;:235853,&quot;user_id&quot;:8091251,&quot;title&quot;:&quot;Coniecto animadverto convoco victus paulatim appositus congregatio nulla confugo.&quot;,&quot;body&quot;:&quot;Amplitudo est sono. Antiquus trucido adicio. Cenaculum tenuis officiis. Curia vel clementia. Auctor deprecator alius. Officia volup provident. Aperio viduo sopor. Somniculosus cariosus est. Comptus defero aggredior. Et sulum cito. Cum colloco atque. Patrocinor verecundia volo. Voluptas decimus vultuosus.&quot;},{&quot;id&quot;:235852,&quot;user_id&quot;:8091248,&quot;title&quot;:&quot;Astrum curtus deripio ver decor vitiosus impedit socius recusandae.&quot;,&quot;body&quot;:&quot;Tumultus asporto substantia. Sed blandior trepide. Et vulnus hic. Vigor id demitto. Cedo solium thermae. Aequus volaticus credo. Terebro porro damnatio. Cursus theologus solitudo. Vigilo addo sit. Arcesso aestas minus. Creator tempora creber.&quot;},{&quot;id&quot;:235851,&quot;user_id&quot;:8091248,&quot;title&quot;:&quot;Debitis talus tyrannus esse nobis.&quot;,&quot;body&quot;:&quot;Vos accendo bellicus. Sub ustulo curto. Ademptio denuo abundans. Tribuo vobis sit. Aut adhaero texo. Volaticus cursim bene. Centum qui sint. Viridis amplus in. Voluntarius celebrer adfero. Iusto desolo summisse. Delinquo tamen tibi. Depraedor ratione cura. Ut eveniet vulticulus. Caelestis clamo et.&quot;},{&quot;id&quot;:235850,&quot;user_id&quot;:8091246,&quot;title&quot;:&quot;Somniculosus vix compello velit et placeat thalassinus voro voluptatibus.&quot;,&quot;body&quot;:&quot;Aeger ustulo venustas. Est vester at. Saepe atrox subiungo. Altus copiose bonus. Synagoga comptus dapifer. Ter corona praesentium. Sursum tracto vitium. Demo victus umquam. Caecus cogo apto. Tamisium audax angelus. Condico totam crinis. Exercitationem calamitas decet. Et pax tam. Voveo abduco non.&quot;},{&quot;id&quot;:235849,&quot;user_id&quot;:8091246,&quot;title&quot;:&quot;Ex adsidue sui adamo aliqua urbanus alienus vere.&quot;,&quot;body&quot;:&quot;Corona a armo. Solium sordeo delibero. Sub ipsa decens. Cibo temeritas cunabula. Thymum curto demoror. Vestigium tredecim ut. Eligendi denuncio curiositas. Thalassinus arbor adversus. Statim quos timidus. Tripudio pecto utilis. Stillicidium officiis tamen. Atque alias cicuta. Subseco benevolentia talus.&quot;},{&quot;id&quot;:235848,&quot;user_id&quot;:8091245,&quot;title&quot;:&quot;Vel degusto supellex pariatur tepidus veritatis compello modi.&quot;,&quot;body&quot;:&quot;Demo clibanus canto. Solio sustineo tricesimus. Spoliatio adultus utor. Deputo annus eos. Cervus causa voluptatem. Est peior arbor. Aer vallum adicio. Deleniti utique suscipit. Alo dedico studio. Ager congregatio victus. Temptatio veritatis aureus. Adfero angustus hic. Summa decor vos.&quot;},{&quot;id&quot;:235847,&quot;user_id&quot;:8091245,&quot;title&quot;:&quot;Amplexus thema omnis textor ventito.&quot;,&quot;body&quot;:&quot;Fugiat ventito amitto. Vindico victus adaugeo. Pecco vorax deserunt. Vociferor velut uterque. Aqua cotidie tametsi. Adeo omnis adultus. Ulciscor et attero. Cultellus delectatio cuppedia. Occaecati ut veniam. Vesco tabella aut. Tam patior autem. Viriliter officiis aeger. Suffragium sol caelum.&quot;},{&quot;id&quot;:235846,&quot;user_id&quot;:8091244,&quot;title&quot;:&quot;Territo asperiores thalassinus cumque voluptatum talis acquiro volo.&quot;,&quot;body&quot;:&quot;Aggero sub defetiscor. Cupio auditor venia. Impedit caelestis aegrus. Excepturi eius chirographum. Deduco sit pecunia. Et surculus territo. Vindico vox nemo. Calco omnis armo. Advoco unus ipsum. Nihil aiunt vulpes. Deprecator caritas angulus. Vero acsi voluptatum. Sub ciminatio quas. Teres voluptatem arcesso.&quot;},{&quot;id&quot;:235845,&quot;user_id&quot;:8091242,&quot;title&quot;:&quot;Voluptas aliquam cupressus supra tero contego virga copiose.&quot;,&quot;body&quot;:&quot;Fuga volubilis desino. Ut combibo maxime. Recusandae denuo volubilis. Voluptas culpa testimonium. Absens denuo nesciunt. Adversus cena argumentum. Consequatur ago comedo. Optio aequus accusator. Abundans aut tribuo. Mollitia volva comprehendo. Suggero valens stabilis. Tandem culpa agnitio.&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response == { id: &#39;#number&#39;, user_id: &#39;#number&#39;, title: &#39;#string&#39;, body: &#39;#string&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">19</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:14]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:14]</span>
+                <span class="scenario-name">Create Post</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1854</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:14]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:14]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">23:18:15.496 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:14]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>headers headers</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:14]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userId = karate.get(&#39;userId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;, userId, &#39;posts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { title: postTitle, body: postBody }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">94</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1750</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">23:18:15.711 request:
+1 &gt; POST https://gorest.co.in/public/v2/users/posts
+1 &gt; Accept: application/json
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Authorization: Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610
+1 &gt; Content-Length: 39
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;title&quot;:&quot;postTitle&quot;,&quot;body&quot;:&quot;postBody&quot;}
+
+23:18:17.359 response time in milliseconds: 1643
+1 &lt; 404
+1 &lt; Date: Thu, 28 Aug 2025 03:18:16 GMT
+1 &lt; Content-Type: text/html; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: no-cache
+1 &lt; feature-policy: camera &#39;none&#39;; gyroscope &#39;none&#39;; microphone &#39;none&#39;; usb &#39;none&#39;; fullscreen &#39;self&#39;
+1 &lt; link: &lt;/assets/application-908c2251d58be479b7fb209519b40235fa8b917357737796da9f4462eea8cabe.css&gt;; rel=preload; as=style; nopush
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; vary: Origin
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-request-id: 8fd355b7-94fe-4536-b32c-64dc994c8c4d
+1 &lt; x-runtime: 0.007180
+1 &lt; x-xss-protection: 0
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=doKHivInBqs7p5PExRupBLaTtCteZ9jbOW1TaSjT8zqlyF5mXdPvHAZd%2B5wX5cAu9hz3YFIrvKYnthMNXnsv%2BGxH6lXuH3ZqS74%3D&quot;}]}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 9760a90b4f22e9c5-GRU
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;meta content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot; name=&quot;viewport&quot; /&gt;&lt;link href=&quot;/favicon.ico&quot; rel=&quot;icon&quot; type=&quot;image/x-icon&quot; /&gt;&lt;title&gt;Page Not Found | GO REST&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/application-908c2251d58be479b7fb209519b40235fa8b917357737796da9f4462eea8cabe.css&quot; media=&quot;all&quot; data-turbolinks-track=&quot;reload&quot; /&gt;&lt;script src=&quot;/packs/js/application-194ed409298f13f197d2.js&quot; data-turbolinks-track=&quot;reload&quot; defer=&quot;defer&quot;&gt;&lt;/script&gt;&lt;script async=&quot;true&quot; crossorigin=&quot;anonymous&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4400401340006140&quot;&gt;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-dark sticky-top&quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;&lt;i class=&quot;fas fa-exchange-alt&quot;&gt;&lt;/i&gt; Go REST&lt;/a&gt;&lt;button aria-controls=&quot;AppNavBar&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot; class=&quot;navbar-toggler&quot; data-bs-target=&quot;#AppNavBar&quot; data-bs-toggle=&quot;collapse&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;&lt;/button&gt;&lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;AppNavBar&quot;&gt;&lt;ul class=&quot;navbar-nav ms-auto&quot;&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/qa&quot;&gt;&lt;i class=&quot;fas fa-life-ring&quot;&gt;&lt;/i&gt; Help&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/rest-console&quot;&gt;&lt;i class=&quot;fab fa-linux&quot;&gt;&lt;/i&gt; Rest Console&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item dropdown&quot;&gt;&lt;a aria-expanded=&quot;false&quot; class=&quot;nav-link dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; href=&quot;#&quot; id=&quot;ToolsDropDown&quot; role=&quot;button&quot;&gt;&lt;i class=&quot;fas fa-tools&quot;&gt;&lt;/i&gt; Tools&lt;/a&gt;&lt;ul aria-labelledby=&quot;ToolsDropDown&quot; class=&quot;dropdown-menu&quot;&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/base64-encode-decode&quot;&gt;Base64 Encode/Decode&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/url-encode-decode&quot;&gt;Url Encode/Decode&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/gcode-translator&quot;&gt;G-Code Translator&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/consumer/login&quot;&gt;Login&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/nav&gt;&lt;div class=&quot;container pt-3&quot;&gt;&lt;style type=&quot;text/css&quot;&gt;.code-text code {color: #bdbdbd;display: block;}.code-text code b {color: #81a2be;font-weight: 900;}.code-text code em {color: #b294bb;font-style: unset;}.code-text code i {color: #b5bd68;}.code-text code span {color: #f0c674;}&lt;/style&gt;&lt;div class=&quot;card text-white border-secondary bg-dark&quot;&gt;&lt;div class=&quot;card-header&quot;&gt;&lt;h1 class=&quot;card-title text-warning&quot;&gt;&lt;i class=&quot;fas fa-ghost text-white slide-right&quot;&gt;&lt;/i&gt; HTTP: Not Found &lt;/h1&gt;&lt;/div&gt;&lt;div class=&quot;card-body&quot;&gt;&lt;h3 class=&quot;leaad code-text&quot;&gt;&lt;code class=&quot;mb-3&quot;&gt;&lt;span&gt;this_page&lt;/span&gt;.&lt;em&gt;not_found&lt;/em&gt; = true&lt;/code&gt;&lt;/h3&gt;&lt;p class=&quot;lead code-text&quot;&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;if&lt;/span&gt; &lt;b&gt;you_spelt_it_wrong&lt;/b&gt; &lt;br /&gt;&amp;nbsp;&amp;nbsp;&lt;span&gt;try_again&lt;/span&gt;&lt;br /&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;elsif &lt;b&gt;we_screwed_up&lt;/b&gt;&lt;/span&gt; &lt;br /&gt;&amp;nbsp;&amp;nbsp;&lt;em&gt;print&lt;/em&gt; &lt;i&gt;&quot;We&#39;re really sorry about that.&quot;&lt;/i&gt;&lt;br/&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;end&lt;/span&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;redirect_to&lt;/span&gt; &lt;em&gt;home_page&lt;/em&gt;&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;card-footer&quot;&gt;&lt;p class=&quot;text-danger&quot;&gt;We are sorry, something went wrong. Please try again later.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;hr class=&quot;mt-5&quot; /&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;footer&quot;&gt;&lt;ul class=&quot;list-inline&quot;&gt;&lt;li class=&quot;list-inline-item&quot;&gt;&amp;copy; Go Rest 2025&lt;/li&gt;&lt;li class=&quot;list-inline-item float-lg-end&quot;&gt;&lt;a href=&quot;/privacy-policy&quot;&gt;Privacy Policy&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;list-inline-item float-lg-end me-3&quot;&gt;&lt;a href=&quot;/contact-us&quot;&gt;Contact Us&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref failed">18</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">23:18:17.363 classpath:examples/posts/posts.feature:18
+Then status 201
+status code was: 404, expected: 201, response time in milliseconds: 1643, url: https://gorest.co.in/public/v2/users/posts, response: 
+&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;meta content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot; name=&quot;viewport&quot; /&gt;&lt;link href=&quot;/favicon.ico&quot; rel=&quot;icon&quot; type=&quot;image/x-icon&quot; /&gt;&lt;title&gt;Page Not Found | GO REST&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/application-908c2251d58be479b7fb209519b40235fa8b917357737796da9f4462eea8cabe.css&quot; media=&quot;all&quot; data-turbolinks-track=&quot;reload&quot; /&gt;&lt;script src=&quot;/packs/js/application-194ed409298f13f197d2.js&quot; data-turbolinks-track=&quot;reload&quot; defer=&quot;defer&quot;&gt;&lt;/script&gt;&lt;script async=&quot;true&quot; crossorigin=&quot;anonymous&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4400401340006140&quot;&gt;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-dark sticky-top&quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;&lt;i class=&quot;fas fa-exchange-alt&quot;&gt;&lt;/i&gt; Go REST&lt;/a&gt;&lt;button aria-controls=&quot;AppNavBar&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot; class=&quot;navbar-toggler&quot; data-bs-target=&quot;#AppNavBar&quot; data-bs-toggle=&quot;collapse&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;&lt;/button&gt;&lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;AppNavBar&quot;&gt;&lt;ul class=&quot;navbar-nav ms-auto&quot;&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/qa&quot;&gt;&lt;i class=&quot;fas fa-life-ring&quot;&gt;&lt;/i&gt; Help&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/rest-console&quot;&gt;&lt;i class=&quot;fab fa-linux&quot;&gt;&lt;/i&gt; Rest Console&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item dropdown&quot;&gt;&lt;a aria-expanded=&quot;false&quot; class=&quot;nav-link dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; href=&quot;#&quot; id=&quot;ToolsDropDown&quot; role=&quot;button&quot;&gt;&lt;i class=&quot;fas fa-tools&quot;&gt;&lt;/i&gt; Tools&lt;/a&gt;&lt;ul aria-labelledby=&quot;ToolsDropDown&quot; class=&quot;dropdown-menu&quot;&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/base64-encode-decode&quot;&gt;Base64 Encode/Decode&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/url-encode-decode&quot;&gt;Url Encode/Decode&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/gcode-translator&quot;&gt;G-Code Translator&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/consumer/login&quot;&gt;Login&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/nav&gt;&lt;div class=&quot;container pt-3&quot;&gt;&lt;style type=&quot;text/css&quot;&gt;.code-text code {color: #bdbdbd;display: block;}.code-text code b {color: #81a2be;font-weight: 900;}.code-text code em {color: #b294bb;font-style: unset;}.code-text code i {color: #b5bd68;}.code-text code span {color: #f0c674;}&lt;/style&gt;&lt;div class=&quot;card text-white border-secondary bg-dark&quot;&gt;&lt;div class=&quot;card-header&quot;&gt;&lt;h1 class=&quot;card-title text-warning&quot;&gt;&lt;i class=&quot;fas fa-ghost text-white slide-right&quot;&gt;&lt;/i&gt; HTTP: Not Found &lt;/h1&gt;&lt;/div&gt;&lt;div class=&quot;card-body&quot;&gt;&lt;h3 class=&quot;leaad code-text&quot;&gt;&lt;code class=&quot;mb-3&quot;&gt;&lt;span&gt;this_page&lt;/span&gt;.&lt;em&gt;not_found&lt;/em&gt; = true&lt;/code&gt;&lt;/h3&gt;&lt;p class=&quot;lead code-text&quot;&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;if&lt;/span&gt; &lt;b&gt;you_spelt_it_wrong&lt;/b&gt; &lt;br /&gt;&amp;nbsp;&amp;nbsp;&lt;span&gt;try_again&lt;/span&gt;&lt;br /&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;elsif &lt;b&gt;we_screwed_up&lt;/b&gt;&lt;/span&gt; &lt;br /&gt;&amp;nbsp;&amp;nbsp;&lt;em&gt;print&lt;/em&gt; &lt;i&gt;&quot;We&#39;re really sorry about that.&quot;&lt;/i&gt;&lt;br/&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;end&lt;/span&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;redirect_to&lt;/span&gt; &lt;em&gt;home_page&lt;/em&gt;&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;card-footer&quot;&gt;&lt;p class=&quot;text-danger&quot;&gt;We are sorry, something went wrong. Please try again later.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;hr class=&quot;mt-5&quot; /&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;footer&quot;&gt;&lt;ul class=&quot;list-inline&quot;&gt;&lt;li class=&quot;list-inline-item&quot;&gt;&amp;copy; Go Rest 2025&lt;/li&gt;&lt;li class=&quot;list-inline-item float-lg-end&quot;&gt;&lt;a href=&quot;/privacy-policy&quot;&gt;Privacy Policy&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;list-inline-item float-lg-end me-3&quot;&gt;&lt;a href=&quot;/contact-us&quot;&gt;Contact Us&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+classpath:examples/posts/posts.feature:18
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref skipped">19</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response == { id: &#39;#number&#39;, user_id: &#39;#(userId)&#39;, title: &#39;#(postTitle)&#39;, body: &#39;#(postBody)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref skipped">20</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def postId = response.id</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:22]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:22]</span>
+                <span class="scenario-name">Update Post</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>11</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:22]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">23:18:15.496 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>headers headers</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userId = karate.get(&#39;userId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref failed">23</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>path &#39;posts&#39;, postId</span>
+      </div>
+    </div>
+    <div class="time-cell failed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">23:18:15.519 classpath:examples/posts/posts.feature:23
+Given path &#39;posts&#39;, postId
+js failed:
+&gt;&gt;&gt;&gt;
+01: [&#39;posts&#39;, postId]
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;postId&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:examples/posts/posts.feature:23
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref skipped">24</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request { title: postTitle, body: postBody }</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref skipped">25</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method patch</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref skipped">26</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref skipped">27</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.title == postTitle</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:29]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:29]</span>
+                <span class="scenario-name">Delete Post</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>5</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:29]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">23:18:15.526 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>headers headers</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userId = karate.get(&#39;userId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref failed">30</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>path &#39;posts&#39;, postId</span>
+      </div>
+    </div>
+    <div class="time-cell failed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.30">23:18:15.541 classpath:examples/posts/posts.feature:30
+Given path &#39;posts&#39;, postId
+js failed:
+&gt;&gt;&gt;&gt;
+01: [&#39;posts&#39;, postId]
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;postId&quot; is not defined
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:examples/posts/posts.feature:30
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref skipped">31</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref skipped">32</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 204</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref skipped">33</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response == &#39;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

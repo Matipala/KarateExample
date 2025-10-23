@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"582ae21f-2b77-4abe-8ae3-2a16cd8d1784",karate_version:"1.5.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>examples.comments.comments</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">3</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-08-27 11:53:00 p. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:10]"><span>[1:10]</span> <span>Create Comment</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:36]"><span>[2:36]</span> <span>Get Comments</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[3:43]"><span>[3:43]</span> <span>Update Comment</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4:52]"><span>[4:52]</span> <span>Delete Comment</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/comments/comments.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Comment API</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:10]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:10]</span>
+                <span class="scenario-name">Create Comment</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1846</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:10]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">23:52:58.059 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + BearerToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def postId = karate.get(&#39;postId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def commentPayload =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">92</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.11">{
+  name: &#39;#(userName)&#39;,
+  email: &#39;#(userEmail)&#39;,
+  body: &#39;#(comment)&#39;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;posts&#39;, postId, &#39;comments&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request commentPayload</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1725</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.21">23:52:58.745 request:
+1 &gt; POST https://gorest.co.in/public/v2/posts/comments
+1 &gt; Accept: application/json
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Authorization: Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610
+1 &gt; Content-Length: 101
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Juan Carlos&quot;,&quot;email&quot;:&quot;juancarlos1756353178064@test.com&quot;,&quot;body&quot;:&quot;Comment text 1756353178064&quot;}
+
+23:53:00.382 response time in milliseconds: 1632
+1 &lt; 404
+1 &lt; Date: Thu, 28 Aug 2025 03:52:59 GMT
+1 &lt; Content-Type: text/html; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: no-cache
+1 &lt; feature-policy: camera &#39;none&#39;; gyroscope &#39;none&#39;; microphone &#39;none&#39;; usb &#39;none&#39;; fullscreen &#39;self&#39;
+1 &lt; link: &lt;/assets/application-908c2251d58be479b7fb209519b40235fa8b917357737796da9f4462eea8cabe.css&gt;; rel=preload; as=style; nopush
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; vary: Origin
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-request-id: e03813eb-6c46-441c-a6c4-bfd982c20d31
+1 &lt; x-runtime: 0.006273
+1 &lt; x-xss-protection: 0
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=BRtI9pRbA7Jiup8ql9YzSygHtLdZ%2FOLHWDVtIsXNAPJUuFiy%2Fwty0VQhMXcXff4c8C7vxRiV74daqmHhejZeo5sGjkpoV%2B%2BzYE5nlw%3D%3D&quot;}]}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 9760dbe62ab16231-GRU
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;meta content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot; name=&quot;viewport&quot; /&gt;&lt;link href=&quot;/favicon.ico&quot; rel=&quot;icon&quot; type=&quot;image/x-icon&quot; /&gt;&lt;title&gt;Page Not Found | GO REST&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/application-908c2251d58be479b7fb209519b40235fa8b917357737796da9f4462eea8cabe.css&quot; media=&quot;all&quot; data-turbolinks-track=&quot;reload&quot; /&gt;&lt;script src=&quot;/packs/js/application-194ed409298f13f197d2.js&quot; data-turbolinks-track=&quot;reload&quot; defer=&quot;defer&quot;&gt;&lt;/script&gt;&lt;script async=&quot;true&quot; crossorigin=&quot;anonymous&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4400401340006140&quot;&gt;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-dark sticky-top&quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;&lt;i class=&quot;fas fa-exchange-alt&quot;&gt;&lt;/i&gt; Go REST&lt;/a&gt;&lt;button aria-controls=&quot;AppNavBar&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot; class=&quot;navbar-toggler&quot; data-bs-target=&quot;#AppNavBar&quot; data-bs-toggle=&quot;collapse&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;&lt;/button&gt;&lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;AppNavBar&quot;&gt;&lt;ul class=&quot;navbar-nav ms-auto&quot;&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/qa&quot;&gt;&lt;i class=&quot;fas fa-life-ring&quot;&gt;&lt;/i&gt; Help&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/rest-console&quot;&gt;&lt;i class=&quot;fab fa-linux&quot;&gt;&lt;/i&gt; Rest Console&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item dropdown&quot;&gt;&lt;a aria-expanded=&quot;false&quot; class=&quot;nav-link dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; href=&quot;#&quot; id=&quot;ToolsDropDown&quot; role=&quot;button&quot;&gt;&lt;i class=&quot;fas fa-tools&quot;&gt;&lt;/i&gt; Tools&lt;/a&gt;&lt;ul aria-labelledby=&quot;ToolsDropDown&quot; class=&quot;dropdown-menu&quot;&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/base64-encode-decode&quot;&gt;Base64 Encode/Decode&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/url-encode-decode&quot;&gt;Url Encode/Decode&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/gcode-translator&quot;&gt;G-Code Translator&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/consumer/login&quot;&gt;Login&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/nav&gt;&lt;div class=&quot;container pt-3&quot;&gt;&lt;style type=&quot;text/css&quot;&gt;.code-text code {color: #bdbdbd;display: block;}.code-text code b {color: #81a2be;font-weight: 900;}.code-text code em {color: #b294bb;font-style: unset;}.code-text code i {color: #b5bd68;}.code-text code span {color: #f0c674;}&lt;/style&gt;&lt;div class=&quot;card text-white border-secondary bg-dark&quot;&gt;&lt;div class=&quot;card-header&quot;&gt;&lt;h1 class=&quot;card-title text-warning&quot;&gt;&lt;i class=&quot;fas fa-ghost text-white slide-right&quot;&gt;&lt;/i&gt; HTTP: Not Found &lt;/h1&gt;&lt;/div&gt;&lt;div class=&quot;card-body&quot;&gt;&lt;h3 class=&quot;leaad code-text&quot;&gt;&lt;code class=&quot;mb-3&quot;&gt;&lt;span&gt;this_page&lt;/span&gt;.&lt;em&gt;not_found&lt;/em&gt; = true&lt;/code&gt;&lt;/h3&gt;&lt;p class=&quot;lead code-text&quot;&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;if&lt;/span&gt; &lt;b&gt;you_spelt_it_wrong&lt;/b&gt; &lt;br /&gt;&amp;nbsp;&amp;nbsp;&lt;span&gt;try_again&lt;/span&gt;&lt;br /&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;elsif &lt;b&gt;we_screwed_up&lt;/b&gt;&lt;/span&gt; &lt;br /&gt;&amp;nbsp;&amp;nbsp;&lt;em&gt;print&lt;/em&gt; &lt;i&gt;&quot;We&#39;re really sorry about that.&quot;&lt;/i&gt;&lt;br/&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;end&lt;/span&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;redirect_to&lt;/span&gt; &lt;em&gt;home_page&lt;/em&gt;&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;card-footer&quot;&gt;&lt;p class=&quot;text-danger&quot;&gt;We are sorry, something went wrong. Please try again later.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;hr class=&quot;mt-5&quot; /&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;footer&quot;&gt;&lt;ul class=&quot;list-inline&quot;&gt;&lt;li class=&quot;list-inline-item&quot;&gt;&amp;copy; Go Rest 2025&lt;/li&gt;&lt;li class=&quot;list-inline-item float-lg-end&quot;&gt;&lt;a href=&quot;/privacy-policy&quot;&gt;Privacy Policy&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;list-inline-item float-lg-end me-3&quot;&gt;&lt;a href=&quot;/contact-us&quot;&gt;Contact Us&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref failed">22</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell failed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.22">23:53:00.391 classpath:examples/comments/comments.feature:22
+Then status 201
+status code was: 404, expected: 201, response time in milliseconds: 1632, url: https://gorest.co.in/public/v2/posts/comments, response: 
+&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;meta content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot; name=&quot;viewport&quot; /&gt;&lt;link href=&quot;/favicon.ico&quot; rel=&quot;icon&quot; type=&quot;image/x-icon&quot; /&gt;&lt;title&gt;Page Not Found | GO REST&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/application-908c2251d58be479b7fb209519b40235fa8b917357737796da9f4462eea8cabe.css&quot; media=&quot;all&quot; data-turbolinks-track=&quot;reload&quot; /&gt;&lt;script src=&quot;/packs/js/application-194ed409298f13f197d2.js&quot; data-turbolinks-track=&quot;reload&quot; defer=&quot;defer&quot;&gt;&lt;/script&gt;&lt;script async=&quot;true&quot; crossorigin=&quot;anonymous&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4400401340006140&quot;&gt;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-dark sticky-top&quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;&lt;i class=&quot;fas fa-exchange-alt&quot;&gt;&lt;/i&gt; Go REST&lt;/a&gt;&lt;button aria-controls=&quot;AppNavBar&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot; class=&quot;navbar-toggler&quot; data-bs-target=&quot;#AppNavBar&quot; data-bs-toggle=&quot;collapse&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;&lt;/button&gt;&lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;AppNavBar&quot;&gt;&lt;ul class=&quot;navbar-nav ms-auto&quot;&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/qa&quot;&gt;&lt;i class=&quot;fas fa-life-ring&quot;&gt;&lt;/i&gt; Help&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/rest-console&quot;&gt;&lt;i class=&quot;fab fa-linux&quot;&gt;&lt;/i&gt; Rest Console&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item dropdown&quot;&gt;&lt;a aria-expanded=&quot;false&quot; class=&quot;nav-link dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; href=&quot;#&quot; id=&quot;ToolsDropDown&quot; role=&quot;button&quot;&gt;&lt;i class=&quot;fas fa-tools&quot;&gt;&lt;/i&gt; Tools&lt;/a&gt;&lt;ul aria-labelledby=&quot;ToolsDropDown&quot; class=&quot;dropdown-menu&quot;&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/base64-encode-decode&quot;&gt;Base64 Encode/Decode&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/url-encode-decode&quot;&gt;Url Encode/Decode&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/gcode-translator&quot;&gt;G-Code Translator&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/consumer/login&quot;&gt;Login&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/nav&gt;&lt;div class=&quot;container pt-3&quot;&gt;&lt;style type=&quot;text/css&quot;&gt;.code-text code {color: #bdbdbd;display: block;}.code-text code b {color: #81a2be;font-weight: 900;}.code-text code em {color: #b294bb;font-style: unset;}.code-text code i {color: #b5bd68;}.code-text code span {color: #f0c674;}&lt;/style&gt;&lt;div class=&quot;card text-white border-secondary bg-dark&quot;&gt;&lt;div class=&quot;card-header&quot;&gt;&lt;h1 class=&quot;card-title text-warning&quot;&gt;&lt;i class=&quot;fas fa-ghost text-white slide-right&quot;&gt;&lt;/i&gt; HTTP: Not Found &lt;/h1&gt;&lt;/div&gt;&lt;div class=&quot;card-body&quot;&gt;&lt;h3 class=&quot;leaad code-text&quot;&gt;&lt;code class=&quot;mb-3&quot;&gt;&lt;span&gt;this_page&lt;/span&gt;.&lt;em&gt;not_found&lt;/em&gt; = true&lt;/code&gt;&lt;/h3&gt;&lt;p class=&quot;lead code-text&quot;&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;if&lt;/span&gt; &lt;b&gt;you_spelt_it_wrong&lt;/b&gt; &lt;br /&gt;&amp;nbsp;&amp;nbsp;&lt;span&gt;try_again&lt;/span&gt;&lt;br /&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;elsif &lt;b&gt;we_screwed_up&lt;/b&gt;&lt;/span&gt; &lt;br /&gt;&amp;nbsp;&amp;nbsp;&lt;em&gt;print&lt;/em&gt; &lt;i&gt;&quot;We&#39;re really sorry about that.&quot;&lt;/i&gt;&lt;br/&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;end&lt;/span&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;redirect_to&lt;/span&gt; &lt;em&gt;home_page&lt;/em&gt;&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;card-footer&quot;&gt;&lt;p class=&quot;text-danger&quot;&gt;We are sorry, something went wrong. Please try again later.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;hr class=&quot;mt-5&quot; /&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;footer&quot;&gt;&lt;ul class=&quot;list-inline&quot;&gt;&lt;li class=&quot;list-inline-item&quot;&gt;&amp;copy; Go Rest 2025&lt;/li&gt;&lt;li class=&quot;list-inline-item float-lg-end&quot;&gt;&lt;a href=&quot;/privacy-policy&quot;&gt;Privacy Policy&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;list-inline-item float-lg-end me-3&quot;&gt;&lt;a href=&quot;/contact-us&quot;&gt;Contact Us&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+classpath:examples/comments/comments.feature:22
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref skipped">23</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response ==</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.23">{
+  id: &#39;#number&#39;,
+  post_id: &#39;#(postId)&#39;,
+  name: &#39;#(userName)&#39;,
+  email: &#39;#(userEmail)&#39;,
+  body: &#39;#(comment)&#39;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref skipped">33</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def commentId = response.id</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref skipped">34</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>eval karate.set(&#39;commentId&#39;, response.id)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:36]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:36]</span>
+                <span class="scenario-name">Get Comments</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1896</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:36]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:36]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">23:52:58.059 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:36]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:36]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:36]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + BearerToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:36]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def postId = karate.get(&#39;postId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;comments&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1851</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.38">23:52:58.720 request:
+1 &gt; GET https://gorest.co.in/public/v2/comments
+1 &gt; Accept: application/json
+1 &gt; Content-Type: application/json
+1 &gt; Authorization: Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:53:00.411 response time in milliseconds: 1690
+1 &lt; 200
+1 &lt; Date: Thu, 28 Aug 2025 03:52:59 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Etag: W/&quot;3f808176aa0f759bdc50f1ccc750894b&quot;
+1 &lt; Feature-Policy: camera &#39;none&#39;; gyroscope &#39;none&#39;; microphone &#39;none&#39;; usb &#39;none&#39;; fullscreen &#39;self&#39;
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Links-Current: https://gorest.co.in/public/v2/comments?page=1
+1 &lt; X-Links-Next: https://gorest.co.in/public/v2/comments?page=2
+1 &lt; X-Links-Previous: 
+1 &lt; X-Pagination-Limit: 10
+1 &lt; X-Pagination-Page: 1
+1 &lt; X-Pagination-Pages: 312
+1 &lt; X-Pagination-Total: 3112
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Ratelimit-Limit: 90
+1 &lt; X-Ratelimit-Remaining: 86
+1 &lt; X-Ratelimit-Reset: 1
+1 &lt; X-Request-Id: 616771d5-c005-4ff9-98be-24828268f247
+1 &lt; X-Runtime: 0.036286
+1 &lt; X-Xss-Protection: 0
+1 &lt; Cf-Cache-Status: DYNAMIC
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=Ah4UbgXDPGJXxTRzF8rOBBNZ14I6wiyxc2%2BMMKjNCUcweDZosehvgiBeVeKe0mCSO2NQAoSaC%2FbX0GvIJyCktT5tptCubXiq%2F4s%2FVw%3D%3D&quot;}]}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 9760dbe62b48a4d1-GRU
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+[{&quot;id&quot;:164622,&quot;post_id&quot;:235853,&quot;name&quot;:&quot;Nirbhay Dwivedi&quot;,&quot;email&quot;:&quot;dwivedi_nirbhay@blanda.test&quot;,&quot;body&quot;:&quot;Laudantium molestiae iusto.&quot;},{&quot;id&quot;:164621,&quot;post_id&quot;:235853,&quot;name&quot;:&quot;Sudeva Bhattathiri&quot;,&quot;email&quot;:&quot;sudeva_bhattathiri@quitzon-hudson.example&quot;,&quot;body&quot;:&quot;Molestias est rerum. Distinctio ullam itaque. Necessitatibus in neque.&quot;},{&quot;id&quot;:164620,&quot;post_id&quot;:235852,&quot;name&quot;:&quot;Shantanu Jain&quot;,&quot;email&quot;:&quot;jain_shantanu@steuber.test&quot;,&quot;body&quot;:&quot;Quia enim maiores.&quot;},{&quot;id&quot;:164619,&quot;post_id&quot;:235852,&quot;name&quot;:&quot;Rev. Akshat Khanna&quot;,&quot;email&quot;:&quot;akshat_khanna_rev@dach.example&quot;,&quot;body&quot;:&quot;Ab ut eaque.&quot;},{&quot;id&quot;:164618,&quot;post_id&quot;:235850,&quot;name&quot;:&quot;Ojaswini Gill&quot;,&quot;email&quot;:&quot;gill_ojaswini@volkman.test&quot;,&quot;body&quot;:&quot;Temporibus aut sequi.&quot;},{&quot;id&quot;:164617,&quot;post_id&quot;:235850,&quot;name&quot;:&quot;Digambara Nehru&quot;,&quot;email&quot;:&quot;nehru_digambara@frami-wuckert.example&quot;,&quot;body&quot;:&quot;Omnis deleniti odio. Quis qui ut.&quot;},{&quot;id&quot;:164616,&quot;post_id&quot;:235849,&quot;name&quot;:&quot;Somu Johar&quot;,&quot;email&quot;:&quot;johar_somu@skiles-dibbert.example&quot;,&quot;body&quot;:&quot;Eum dignissimos nesciunt. Itaque iure et.&quot;},{&quot;id&quot;:164615,&quot;post_id&quot;:235848,&quot;name&quot;:&quot;Baalagopaal Bhattathiri&quot;,&quot;email&quot;:&quot;bhattathiri_baalagopaal@connelly.example&quot;,&quot;body&quot;:&quot;Qui aut aut. Quis voluptas alias. Quam sit voluptate. Magnam recusandae quo.&quot;},{&quot;id&quot;:164614,&quot;post_id&quot;:235847,&quot;name&quot;:&quot;Sanya Gill&quot;,&quot;email&quot;:&quot;sanya_gill@balistreri-heathcote.example&quot;,&quot;body&quot;:&quot;Nobis veritatis quaerat.&quot;},{&quot;id&quot;:164613,&quot;post_id&quot;:235847,&quot;name&quot;:&quot;Anjushri Joshi&quot;,&quot;email&quot;:&quot;anjushri_joshi@muller.test&quot;,&quot;body&quot;:&quot;Officiis qui pariatur. Dolores a sunt.&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert response.length &gt; 0</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response == { id: &#39;#number&#39;, post_id: &#39;#number&#39;, name: &#39;#string&#39;, email: &#39;#string&#39;, body: &#39;#string&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">22</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:43]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:43]</span>
+                <span class="scenario-name">Update Comment</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1846</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:43]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:43]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">23:52:58.059 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:43]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:43]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:43]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + BearerToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:43]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def postId = karate.get(&#39;postId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def updateCommentPayload = { body: &#39;#(comment)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">91</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;comments&#39;, commentId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request updateCommentPayload</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method patch</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1724</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.47">23:52:58.745 request:
+1 &gt; PATCH https://gorest.co.in/public/v2/comments
+1 &gt; Accept: application/json
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Authorization: Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610
+1 &gt; Content-Length: 37
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;body&quot;:&quot;Comment text 1756353178064&quot;}
+
+23:53:00.381 response time in milliseconds: 1632
+1 &lt; 404
+1 &lt; Date: Thu, 28 Aug 2025 03:52:59 GMT
+1 &lt; Content-Type: text/html; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: no-cache
+1 &lt; Feature-Policy: camera &#39;none&#39;; gyroscope &#39;none&#39;; microphone &#39;none&#39;; usb &#39;none&#39;; fullscreen &#39;self&#39;
+1 &lt; Link: &lt;/assets/application-908c2251d58be479b7fb209519b40235fa8b917357737796da9f4462eea8cabe.css&gt;; rel=preload; as=style; nopush
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Request-Id: a66aae1d-b840-4f88-866e-abb31dafff26
+1 &lt; X-Runtime: 0.004238
+1 &lt; X-Xss-Protection: 0
+1 &lt; Cf-Cache-Status: DYNAMIC
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=dxDMfUSb71Q7%2FmsRVHaub%2B%2BPb6jYScYiwaWWP3hO9VutQlWIYC6NGj%2FUFboyv4D1IsSgcAuJchamUlv4JpfWNP%2FJJv4I8jRNhLaGQQ%3D%3D&quot;}]}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 9760dbe62b9201a3-GRU
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;meta content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot; name=&quot;viewport&quot; /&gt;&lt;link href=&quot;/favicon.ico&quot; rel=&quot;icon&quot; type=&quot;image/x-icon&quot; /&gt;&lt;title&gt;Page Not Found | GO REST&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/application-908c2251d58be479b7fb209519b40235fa8b917357737796da9f4462eea8cabe.css&quot; media=&quot;all&quot; data-turbolinks-track=&quot;reload&quot; /&gt;&lt;script src=&quot;/packs/js/application-194ed409298f13f197d2.js&quot; data-turbolinks-track=&quot;reload&quot; defer=&quot;defer&quot;&gt;&lt;/script&gt;&lt;script async=&quot;true&quot; crossorigin=&quot;anonymous&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4400401340006140&quot;&gt;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-dark sticky-top&quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;&lt;i class=&quot;fas fa-exchange-alt&quot;&gt;&lt;/i&gt; Go REST&lt;/a&gt;&lt;button aria-controls=&quot;AppNavBar&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot; class=&quot;navbar-toggler&quot; data-bs-target=&quot;#AppNavBar&quot; data-bs-toggle=&quot;collapse&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;&lt;/button&gt;&lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;AppNavBar&quot;&gt;&lt;ul class=&quot;navbar-nav ms-auto&quot;&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/qa&quot;&gt;&lt;i class=&quot;fas fa-life-ring&quot;&gt;&lt;/i&gt; Help&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/rest-console&quot;&gt;&lt;i class=&quot;fab fa-linux&quot;&gt;&lt;/i&gt; Rest Console&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item dropdown&quot;&gt;&lt;a aria-expanded=&quot;false&quot; class=&quot;nav-link dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; href=&quot;#&quot; id=&quot;ToolsDropDown&quot; role=&quot;button&quot;&gt;&lt;i class=&quot;fas fa-tools&quot;&gt;&lt;/i&gt; Tools&lt;/a&gt;&lt;ul aria-labelledby=&quot;ToolsDropDown&quot; class=&quot;dropdown-menu&quot;&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/base64-encode-decode&quot;&gt;Base64 Encode/Decode&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/url-encode-decode&quot;&gt;Url Encode/Decode&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/gcode-translator&quot;&gt;G-Code Translator&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/consumer/login&quot;&gt;Login&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/nav&gt;&lt;div class=&quot;container pt-3&quot;&gt;&lt;style type=&quot;text/css&quot;&gt;.code-text code {color: #bdbdbd;display: block;}.code-text code b {color: #81a2be;font-weight: 900;}.code-text code em {color: #b294bb;font-style: unset;}.code-text code i {color: #b5bd68;}.code-text code span {color: #f0c674;}&lt;/style&gt;&lt;div class=&quot;card text-white border-secondary bg-dark&quot;&gt;&lt;div class=&quot;card-header&quot;&gt;&lt;h1 class=&quot;card-title text-warning&quot;&gt;&lt;i class=&quot;fas fa-ghost text-white slide-right&quot;&gt;&lt;/i&gt; HTTP: Not Found &lt;/h1&gt;&lt;/div&gt;&lt;div class=&quot;card-body&quot;&gt;&lt;h3 class=&quot;leaad code-text&quot;&gt;&lt;code class=&quot;mb-3&quot;&gt;&lt;span&gt;this_page&lt;/span&gt;.&lt;em&gt;not_found&lt;/em&gt; = true&lt;/code&gt;&lt;/h3&gt;&lt;p class=&quot;lead code-text&quot;&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;if&lt;/span&gt; &lt;b&gt;you_spelt_it_wrong&lt;/b&gt; &lt;br /&gt;&amp;nbsp;&amp;nbsp;&lt;span&gt;try_again&lt;/span&gt;&lt;br /&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;elsif &lt;b&gt;we_screwed_up&lt;/b&gt;&lt;/span&gt; &lt;br /&gt;&amp;nbsp;&amp;nbsp;&lt;em&gt;print&lt;/em&gt; &lt;i&gt;&quot;We&#39;re really sorry about that.&quot;&lt;/i&gt;&lt;br/&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;end&lt;/span&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;redirect_to&lt;/span&gt; &lt;em&gt;home_page&lt;/em&gt;&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;card-footer&quot;&gt;&lt;p class=&quot;text-danger&quot;&gt;We are sorry, something went wrong. Please try again later.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;hr class=&quot;mt-5&quot; /&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;footer&quot;&gt;&lt;ul class=&quot;list-inline&quot;&gt;&lt;li class=&quot;list-inline-item&quot;&gt;&amp;copy; Go Rest 2025&lt;/li&gt;&lt;li class=&quot;list-inline-item float-lg-end&quot;&gt;&lt;a href=&quot;/privacy-policy&quot;&gt;Privacy Policy&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;list-inline-item float-lg-end me-3&quot;&gt;&lt;a href=&quot;/contact-us&quot;&gt;Contact Us&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref failed">48</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.48">23:53:00.392 classpath:examples/comments/comments.feature:48
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 1632, url: https://gorest.co.in/public/v2/comments, response: 
+&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;meta content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot; name=&quot;viewport&quot; /&gt;&lt;link href=&quot;/favicon.ico&quot; rel=&quot;icon&quot; type=&quot;image/x-icon&quot; /&gt;&lt;title&gt;Page Not Found | GO REST&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/application-908c2251d58be479b7fb209519b40235fa8b917357737796da9f4462eea8cabe.css&quot; media=&quot;all&quot; data-turbolinks-track=&quot;reload&quot; /&gt;&lt;script src=&quot;/packs/js/application-194ed409298f13f197d2.js&quot; data-turbolinks-track=&quot;reload&quot; defer=&quot;defer&quot;&gt;&lt;/script&gt;&lt;script async=&quot;true&quot; crossorigin=&quot;anonymous&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4400401340006140&quot;&gt;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-dark sticky-top&quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;&lt;i class=&quot;fas fa-exchange-alt&quot;&gt;&lt;/i&gt; Go REST&lt;/a&gt;&lt;button aria-controls=&quot;AppNavBar&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot; class=&quot;navbar-toggler&quot; data-bs-target=&quot;#AppNavBar&quot; data-bs-toggle=&quot;collapse&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;&lt;/button&gt;&lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;AppNavBar&quot;&gt;&lt;ul class=&quot;navbar-nav ms-auto&quot;&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/qa&quot;&gt;&lt;i class=&quot;fas fa-life-ring&quot;&gt;&lt;/i&gt; Help&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/rest-console&quot;&gt;&lt;i class=&quot;fab fa-linux&quot;&gt;&lt;/i&gt; Rest Console&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item dropdown&quot;&gt;&lt;a aria-expanded=&quot;false&quot; class=&quot;nav-link dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; href=&quot;#&quot; id=&quot;ToolsDropDown&quot; role=&quot;button&quot;&gt;&lt;i class=&quot;fas fa-tools&quot;&gt;&lt;/i&gt; Tools&lt;/a&gt;&lt;ul aria-labelledby=&quot;ToolsDropDown&quot; class=&quot;dropdown-menu&quot;&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/base64-encode-decode&quot;&gt;Base64 Encode/Decode&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/url-encode-decode&quot;&gt;Url Encode/Decode&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/gcode-translator&quot;&gt;G-Code Translator&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/consumer/login&quot;&gt;Login&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/nav&gt;&lt;div class=&quot;container pt-3&quot;&gt;&lt;style type=&quot;text/css&quot;&gt;.code-text code {color: #bdbdbd;display: block;}.code-text code b {color: #81a2be;font-weight: 900;}.code-text code em {color: #b294bb;font-style: unset;}.code-text code i {color: #b5bd68;}.code-text code span {color: #f0c674;}&lt;/style&gt;&lt;div class=&quot;card text-white border-secondary bg-dark&quot;&gt;&lt;div class=&quot;card-header&quot;&gt;&lt;h1 class=&quot;card-title text-warning&quot;&gt;&lt;i class=&quot;fas fa-ghost text-white slide-right&quot;&gt;&lt;/i&gt; HTTP: Not Found &lt;/h1&gt;&lt;/div&gt;&lt;div class=&quot;card-body&quot;&gt;&lt;h3 class=&quot;leaad code-text&quot;&gt;&lt;code class=&quot;mb-3&quot;&gt;&lt;span&gt;this_page&lt;/span&gt;.&lt;em&gt;not_found&lt;/em&gt; = true&lt;/code&gt;&lt;/h3&gt;&lt;p class=&quot;lead code-text&quot;&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;if&lt;/span&gt; &lt;b&gt;you_spelt_it_wrong&lt;/b&gt; &lt;br /&gt;&amp;nbsp;&amp;nbsp;&lt;span&gt;try_again&lt;/span&gt;&lt;br /&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;elsif &lt;b&gt;we_screwed_up&lt;/b&gt;&lt;/span&gt; &lt;br /&gt;&amp;nbsp;&amp;nbsp;&lt;em&gt;print&lt;/em&gt; &lt;i&gt;&quot;We&#39;re really sorry about that.&quot;&lt;/i&gt;&lt;br/&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;end&lt;/span&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;redirect_to&lt;/span&gt; &lt;em&gt;home_page&lt;/em&gt;&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;card-footer&quot;&gt;&lt;p class=&quot;text-danger&quot;&gt;We are sorry, something went wrong. Please try again later.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;hr class=&quot;mt-5&quot; /&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;footer&quot;&gt;&lt;ul class=&quot;list-inline&quot;&gt;&lt;li class=&quot;list-inline-item&quot;&gt;&amp;copy; Go Rest 2025&lt;/li&gt;&lt;li class=&quot;list-inline-item float-lg-end&quot;&gt;&lt;a href=&quot;/privacy-policy&quot;&gt;Privacy Policy&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;list-inline-item float-lg-end me-3&quot;&gt;&lt;a href=&quot;/contact-us&quot;&gt;Contact Us&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+classpath:examples/comments/comments.feature:48
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref skipped">49</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.body == comment</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref skipped">50</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.id == commentId</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:52]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:52]</span>
+                <span class="scenario-name">Delete Comment</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1846</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:52]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">23:52:58.059 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + BearerToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def postId = karate.get(&#39;postId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;comments&#39;, commentId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">17</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1806</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.54">23:52:58.720 request:
+1 &gt; DELETE https://gorest.co.in/public/v2/comments
+1 &gt; Accept: application/json
+1 &gt; Content-Type: application/json
+1 &gt; Authorization: Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:53:00.382 response time in milliseconds: 1657
+1 &lt; 404
+1 &lt; Date: Thu, 28 Aug 2025 03:52:59 GMT
+1 &lt; Content-Type: text/html; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: no-cache
+1 &lt; feature-policy: camera &#39;none&#39;; gyroscope &#39;none&#39;; microphone &#39;none&#39;; usb &#39;none&#39;; fullscreen &#39;self&#39;
+1 &lt; link: &lt;/assets/application-908c2251d58be479b7fb209519b40235fa8b917357737796da9f4462eea8cabe.css&gt;; rel=preload; as=style; nopush
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; vary: Origin
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-request-id: 63d765c1-b9ab-494a-b06a-3f0258cb69d2
+1 &lt; x-runtime: 0.004849
+1 &lt; x-xss-protection: 0
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=BrtGcXva8alOrNzebS%2FVhFgxKEI6PMCfvt6vUhJgEKgvnTnEbFos8uNFplGHG1gp9yq6SsqsntpLkTEHcPP42ck1ntAWlQiglrYgOA%3D%3D&quot;}]}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 9760dbe62e731b15-GRU
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;meta content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot; name=&quot;viewport&quot; /&gt;&lt;link href=&quot;/favicon.ico&quot; rel=&quot;icon&quot; type=&quot;image/x-icon&quot; /&gt;&lt;title&gt;Page Not Found | GO REST&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/application-908c2251d58be479b7fb209519b40235fa8b917357737796da9f4462eea8cabe.css&quot; media=&quot;all&quot; data-turbolinks-track=&quot;reload&quot; /&gt;&lt;script src=&quot;/packs/js/application-194ed409298f13f197d2.js&quot; data-turbolinks-track=&quot;reload&quot; defer=&quot;defer&quot;&gt;&lt;/script&gt;&lt;script async=&quot;true&quot; crossorigin=&quot;anonymous&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4400401340006140&quot;&gt;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-dark sticky-top&quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;&lt;i class=&quot;fas fa-exchange-alt&quot;&gt;&lt;/i&gt; Go REST&lt;/a&gt;&lt;button aria-controls=&quot;AppNavBar&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot; class=&quot;navbar-toggler&quot; data-bs-target=&quot;#AppNavBar&quot; data-bs-toggle=&quot;collapse&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;&lt;/button&gt;&lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;AppNavBar&quot;&gt;&lt;ul class=&quot;navbar-nav ms-auto&quot;&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/qa&quot;&gt;&lt;i class=&quot;fas fa-life-ring&quot;&gt;&lt;/i&gt; Help&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/rest-console&quot;&gt;&lt;i class=&quot;fab fa-linux&quot;&gt;&lt;/i&gt; Rest Console&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item dropdown&quot;&gt;&lt;a aria-expanded=&quot;false&quot; class=&quot;nav-link dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; href=&quot;#&quot; id=&quot;ToolsDropDown&quot; role=&quot;button&quot;&gt;&lt;i class=&quot;fas fa-tools&quot;&gt;&lt;/i&gt; Tools&lt;/a&gt;&lt;ul aria-labelledby=&quot;ToolsDropDown&quot; class=&quot;dropdown-menu&quot;&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/base64-encode-decode&quot;&gt;Base64 Encode/Decode&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/url-encode-decode&quot;&gt;Url Encode/Decode&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/gcode-translator&quot;&gt;G-Code Translator&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/consumer/login&quot;&gt;Login&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/nav&gt;&lt;div class=&quot;container pt-3&quot;&gt;&lt;style type=&quot;text/css&quot;&gt;.code-text code {color: #bdbdbd;display: block;}.code-text code b {color: #81a2be;font-weight: 900;}.code-text code em {color: #b294bb;font-style: unset;}.code-text code i {color: #b5bd68;}.code-text code span {color: #f0c674;}&lt;/style&gt;&lt;div class=&quot;card text-white border-secondary bg-dark&quot;&gt;&lt;div class=&quot;card-header&quot;&gt;&lt;h1 class=&quot;card-title text-warning&quot;&gt;&lt;i class=&quot;fas fa-ghost text-white slide-right&quot;&gt;&lt;/i&gt; HTTP: Not Found &lt;/h1&gt;&lt;/div&gt;&lt;div class=&quot;card-body&quot;&gt;&lt;h3 class=&quot;leaad code-text&quot;&gt;&lt;code class=&quot;mb-3&quot;&gt;&lt;span&gt;this_page&lt;/span&gt;.&lt;em&gt;not_found&lt;/em&gt; = true&lt;/code&gt;&lt;/h3&gt;&lt;p class=&quot;lead code-text&quot;&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;if&lt;/span&gt; &lt;b&gt;you_spelt_it_wrong&lt;/b&gt; &lt;br /&gt;&amp;nbsp;&amp;nbsp;&lt;span&gt;try_again&lt;/span&gt;&lt;br /&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;elsif &lt;b&gt;we_screwed_up&lt;/b&gt;&lt;/span&gt; &lt;br /&gt;&amp;nbsp;&amp;nbsp;&lt;em&gt;print&lt;/em&gt; &lt;i&gt;&quot;We&#39;re really sorry about that.&quot;&lt;/i&gt;&lt;br/&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;end&lt;/span&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;redirect_to&lt;/span&gt; &lt;em&gt;home_page&lt;/em&gt;&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;card-footer&quot;&gt;&lt;p class=&quot;text-danger&quot;&gt;We are sorry, something went wrong. Please try again later.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;hr class=&quot;mt-5&quot; /&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;footer&quot;&gt;&lt;ul class=&quot;list-inline&quot;&gt;&lt;li class=&quot;list-inline-item&quot;&gt;&amp;copy; Go Rest 2025&lt;/li&gt;&lt;li class=&quot;list-inline-item float-lg-end&quot;&gt;&lt;a href=&quot;/privacy-policy&quot;&gt;Privacy Policy&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;list-inline-item float-lg-end me-3&quot;&gt;&lt;a href=&quot;/contact-us&quot;&gt;Contact Us&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref failed">55</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 204</span>
+      </div>
+    </div>
+    <div class="time-cell failed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.55">23:53:00.391 classpath:examples/comments/comments.feature:55
+Then status 204
+status code was: 404, expected: 204, response time in milliseconds: 1657, url: https://gorest.co.in/public/v2/comments, response: 
+&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;meta content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot; name=&quot;viewport&quot; /&gt;&lt;link href=&quot;/favicon.ico&quot; rel=&quot;icon&quot; type=&quot;image/x-icon&quot; /&gt;&lt;title&gt;Page Not Found | GO REST&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/application-908c2251d58be479b7fb209519b40235fa8b917357737796da9f4462eea8cabe.css&quot; media=&quot;all&quot; data-turbolinks-track=&quot;reload&quot; /&gt;&lt;script src=&quot;/packs/js/application-194ed409298f13f197d2.js&quot; data-turbolinks-track=&quot;reload&quot; defer=&quot;defer&quot;&gt;&lt;/script&gt;&lt;script async=&quot;true&quot; crossorigin=&quot;anonymous&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4400401340006140&quot;&gt;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-dark sticky-top&quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;&lt;i class=&quot;fas fa-exchange-alt&quot;&gt;&lt;/i&gt; Go REST&lt;/a&gt;&lt;button aria-controls=&quot;AppNavBar&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot; class=&quot;navbar-toggler&quot; data-bs-target=&quot;#AppNavBar&quot; data-bs-toggle=&quot;collapse&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;&lt;/button&gt;&lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;AppNavBar&quot;&gt;&lt;ul class=&quot;navbar-nav ms-auto&quot;&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/qa&quot;&gt;&lt;i class=&quot;fas fa-life-ring&quot;&gt;&lt;/i&gt; Help&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/rest-console&quot;&gt;&lt;i class=&quot;fab fa-linux&quot;&gt;&lt;/i&gt; Rest Console&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;nav-item dropdown&quot;&gt;&lt;a aria-expanded=&quot;false&quot; class=&quot;nav-link dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; href=&quot;#&quot; id=&quot;ToolsDropDown&quot; role=&quot;button&quot;&gt;&lt;i class=&quot;fas fa-tools&quot;&gt;&lt;/i&gt; Tools&lt;/a&gt;&lt;ul aria-labelledby=&quot;ToolsDropDown&quot; class=&quot;dropdown-menu&quot;&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/base64-encode-decode&quot;&gt;Base64 Encode/Decode&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/url-encode-decode&quot;&gt;Url Encode/Decode&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;/tools/gcode-translator&quot;&gt;G-Code Translator&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;/consumer/login&quot;&gt;Login&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/nav&gt;&lt;div class=&quot;container pt-3&quot;&gt;&lt;style type=&quot;text/css&quot;&gt;.code-text code {color: #bdbdbd;display: block;}.code-text code b {color: #81a2be;font-weight: 900;}.code-text code em {color: #b294bb;font-style: unset;}.code-text code i {color: #b5bd68;}.code-text code span {color: #f0c674;}&lt;/style&gt;&lt;div class=&quot;card text-white border-secondary bg-dark&quot;&gt;&lt;div class=&quot;card-header&quot;&gt;&lt;h1 class=&quot;card-title text-warning&quot;&gt;&lt;i class=&quot;fas fa-ghost text-white slide-right&quot;&gt;&lt;/i&gt; HTTP: Not Found &lt;/h1&gt;&lt;/div&gt;&lt;div class=&quot;card-body&quot;&gt;&lt;h3 class=&quot;leaad code-text&quot;&gt;&lt;code class=&quot;mb-3&quot;&gt;&lt;span&gt;this_page&lt;/span&gt;.&lt;em&gt;not_found&lt;/em&gt; = true&lt;/code&gt;&lt;/h3&gt;&lt;p class=&quot;lead code-text&quot;&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;if&lt;/span&gt; &lt;b&gt;you_spelt_it_wrong&lt;/b&gt; &lt;br /&gt;&amp;nbsp;&amp;nbsp;&lt;span&gt;try_again&lt;/span&gt;&lt;br /&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;elsif &lt;b&gt;we_screwed_up&lt;/b&gt;&lt;/span&gt; &lt;br /&gt;&amp;nbsp;&amp;nbsp;&lt;em&gt;print&lt;/em&gt; &lt;i&gt;&quot;We&#39;re really sorry about that.&quot;&lt;/i&gt;&lt;br/&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;end&lt;/span&gt;&lt;/code&gt;&lt;code class=&quot;mb-2&quot;&gt;&lt;span&gt;redirect_to&lt;/span&gt; &lt;em&gt;home_page&lt;/em&gt;&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;card-footer&quot;&gt;&lt;p class=&quot;text-danger&quot;&gt;We are sorry, something went wrong. Please try again later.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;hr class=&quot;mt-5&quot; /&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;footer&quot;&gt;&lt;ul class=&quot;list-inline&quot;&gt;&lt;li class=&quot;list-inline-item&quot;&gt;&amp;copy; Go Rest 2025&lt;/li&gt;&lt;li class=&quot;list-inline-item float-lg-end&quot;&gt;&lt;a href=&quot;/privacy-policy&quot;&gt;Privacy Policy&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;list-inline-item float-lg-end me-3&quot;&gt;&lt;a href=&quot;/contact-us&quot;&gt;Contact Us&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;
+classpath:examples/comments/comments.feature:55
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref skipped">56</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response == &#39;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

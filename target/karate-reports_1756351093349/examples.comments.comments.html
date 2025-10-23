@@ -1,0 +1,2677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"582ae21f-2b77-4abe-8ae3-2a16cd8d1784",karate_version:"1.5.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>examples.comments.comments</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">4</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-08-27 11:16:30 p. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>Create Comment</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:16]"><span>[2:16]</span> <span>Get Comments</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[3:22]"><span>[3:22]</span> <span>Update Comment</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4:29]"><span>[4:29]</span> <span>Delete Comment</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/comments/comments.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Comment API</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">Create Comment</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">23:16:29.876 karate.env system property was: null 
+23:16:29.931 classpath:examples/comments/comments.feature:4
+* url baseUrl
+&gt;&gt; classpath:examples/comments/comments.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>headers headers</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">23:16:29.932 classpath:examples/comments/comments.feature:5
+* headers headers
+&gt;&gt; classpath:examples/comments/comments.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+classpath:examples/comments/comments.feature:5
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def postId = karate.get(&#39;postId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">23:16:29.932 classpath:examples/comments/comments.feature:6
+* def postId = karate.get(&#39;postId&#39;)
+&gt;&gt; classpath:examples/comments/comments.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+classpath:examples/comments/comments.feature:5
+classpath:examples/comments/comments.feature:6
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref failed">9</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>path &#39;posts&#39;, postId, &#39;comments&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">23:16:29.939 classpath:examples/comments/comments.feature:9
+Given path &#39;posts&#39;, postId, &#39;comments&#39;
+&gt;&gt; classpath:examples/comments/comments.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+classpath:examples/comments/comments.feature:5
+classpath:examples/comments/comments.feature:6
+classpath:examples/comments/comments.feature:9
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref failed">10</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>request { name: userName, email: userEmail, body: comment }</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">23:16:29.940 classpath:examples/comments/comments.feature:10
+And request { name: userName, email: userEmail, body: comment }
+&gt;&gt; classpath:examples/comments/comments.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+classpath:examples/comments/comments.feature:5
+classpath:examples/comments/comments.feature:6
+classpath:examples/comments/comments.feature:9
+classpath:examples/comments/comments.feature:10
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref failed">11</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">23:16:29.942 classpath:examples/comments/comments.feature:11
+When method post
+&gt;&gt; classpath:examples/comments/comments.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+classpath:examples/comments/comments.feature:5
+classpath:examples/comments/comments.feature:6
+classpath:examples/comments/comments.feature:9
+classpath:examples/comments/comments.feature:10
+classpath:examples/comments/comments.feature:11
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref failed">12</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">23:16:29.943 classpath:examples/comments/comments.feature:12
+Then status 201
+&gt;&gt; classpath:examples/comments/comments.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+classpath:examples/comments/comments.feature:5
+classpath:examples/comments/comments.feature:6
+classpath:examples/comments/comments.feature:9
+classpath:examples/comments/comments.feature:10
+classpath:examples/comments/comments.feature:11
+classpath:examples/comments/comments.feature:12
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref failed">13</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response == { id: &#39;#number&#39;, post_id: &#39;#(postId)&#39;, name: &#39;#(userName)&#39;, email: &#39;#(userEmail)&#39;, body: &#39;#(comment)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">23:16:29.947 classpath:examples/comments/comments.feature:13
+And match response == { id: &#39;#number&#39;, post_id: &#39;#(postId)&#39;, name: &#39;#(userName)&#39;, email: &#39;#(userEmail)&#39;, body: &#39;#(comment)&#39; }
+&gt;&gt; classpath:examples/comments/comments.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+classpath:examples/comments/comments.feature:5
+classpath:examples/comments/comments.feature:6
+classpath:examples/comments/comments.feature:9
+classpath:examples/comments/comments.feature:10
+classpath:examples/comments/comments.feature:11
+classpath:examples/comments/comments.feature:12
+classpath:examples/comments/comments.feature:13
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref failed">14</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def commentId = response.id</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">23:16:29.949 classpath:examples/comments/comments.feature:14
+* def commentId = response.id
+&gt;&gt; classpath:examples/comments/comments.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+classpath:examples/comments/comments.feature:5
+classpath:examples/comments/comments.feature:6
+classpath:examples/comments/comments.feature:9
+classpath:examples/comments/comments.feature:10
+classpath:examples/comments/comments.feature:11
+classpath:examples/comments/comments.feature:12
+classpath:examples/comments/comments.feature:13
+classpath:examples/comments/comments.feature:14
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:16]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:16]</span>
+                <span class="scenario-name">Get Comments</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:16]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">23:16:29.873 karate.env system property was: null 
+23:16:29.936 classpath:examples/comments/comments.feature:4
+* url baseUrl
+&gt;&gt; classpath:examples/comments/comments.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>headers headers</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">23:16:29.937 classpath:examples/comments/comments.feature:5
+* headers headers
+&gt;&gt; classpath:examples/comments/comments.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+classpath:examples/comments/comments.feature:5
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def postId = karate.get(&#39;postId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">23:16:29.938 classpath:examples/comments/comments.feature:6
+* def postId = karate.get(&#39;postId&#39;)
+&gt;&gt; classpath:examples/comments/comments.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+classpath:examples/comments/comments.feature:5
+classpath:examples/comments/comments.feature:6
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref failed">17</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>path &#39;comments&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">23:16:29.938 classpath:examples/comments/comments.feature:17
+Given path &#39;comments&#39;
+&gt;&gt; classpath:examples/comments/comments.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+classpath:examples/comments/comments.feature:5
+classpath:examples/comments/comments.feature:6
+classpath:examples/comments/comments.feature:17
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref failed">18</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">23:16:29.940 classpath:examples/comments/comments.feature:18
+When method get
+&gt;&gt; classpath:examples/comments/comments.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+classpath:examples/comments/comments.feature:5
+classpath:examples/comments/comments.feature:6
+classpath:examples/comments/comments.feature:17
+classpath:examples/comments/comments.feature:18
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref failed">19</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">23:16:29.942 classpath:examples/comments/comments.feature:19
+Then status 200
+&gt;&gt; classpath:examples/comments/comments.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+classpath:examples/comments/comments.feature:5
+classpath:examples/comments/comments.feature:6
+classpath:examples/comments/comments.feature:17
+classpath:examples/comments/comments.feature:18
+classpath:examples/comments/comments.feature:19
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref failed">20</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match each response == { id: &#39;#number&#39;, post_id: &#39;#number&#39;, name: &#39;#string&#39;, email: &#39;#string&#39;, body: &#39;#string&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">23:16:29.943 classpath:examples/comments/comments.feature:20
+And match each response == { id: &#39;#number&#39;, post_id: &#39;#number&#39;, name: &#39;#string&#39;, email: &#39;#string&#39;, body: &#39;#string&#39; }
+&gt;&gt; classpath:examples/comments/comments.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+classpath:examples/comments/comments.feature:5
+classpath:examples/comments/comments.feature:6
+classpath:examples/comments/comments.feature:17
+classpath:examples/comments/comments.feature:18
+classpath:examples/comments/comments.feature:19
+classpath:examples/comments/comments.feature:20
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:22]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:22]</span>
+                <span class="scenario-name">Update Comment</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:22]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">23:16:29.873 karate.env system property was: null 
+23:16:29.930 classpath:examples/comments/comments.feature:4
+* url baseUrl
+&gt;&gt; classpath:examples/comments/comments.feature:22
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>headers headers</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">23:16:29.933 classpath:examples/comments/comments.feature:5
+* headers headers
+&gt;&gt; classpath:examples/comments/comments.feature:22
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+classpath:examples/comments/comments.feature:5
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def postId = karate.get(&#39;postId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">23:16:29.939 classpath:examples/comments/comments.feature:6
+* def postId = karate.get(&#39;postId&#39;)
+&gt;&gt; classpath:examples/comments/comments.feature:22
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+classpath:examples/comments/comments.feature:5
+classpath:examples/comments/comments.feature:6
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref failed">23</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>path &#39;comments&#39;, commentId</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">23:16:29.941 classpath:examples/comments/comments.feature:23
+Given path &#39;comments&#39;, commentId
+&gt;&gt; classpath:examples/comments/comments.feature:22
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+classpath:examples/comments/comments.feature:5
+classpath:examples/comments/comments.feature:6
+classpath:examples/comments/comments.feature:23
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref failed">24</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>request { body: comment }</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.24">23:16:29.943 classpath:examples/comments/comments.feature:24
+And request { body: comment }
+&gt;&gt; classpath:examples/comments/comments.feature:22
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+classpath:examples/comments/comments.feature:5
+classpath:examples/comments/comments.feature:6
+classpath:examples/comments/comments.feature:23
+classpath:examples/comments/comments.feature:24
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref failed">25</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method patch</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.25">23:16:29.944 classpath:examples/comments/comments.feature:25
+When method patch
+&gt;&gt; classpath:examples/comments/comments.feature:22
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+classpath:examples/comments/comments.feature:5
+classpath:examples/comments/comments.feature:6
+classpath:examples/comments/comments.feature:23
+classpath:examples/comments/comments.feature:24
+classpath:examples/comments/comments.feature:25
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref failed">26</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.26">23:16:29.947 classpath:examples/comments/comments.feature:26
+Then status 200
+&gt;&gt; classpath:examples/comments/comments.feature:22
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+classpath:examples/comments/comments.feature:5
+classpath:examples/comments/comments.feature:6
+classpath:examples/comments/comments.feature:23
+classpath:examples/comments/comments.feature:24
+classpath:examples/comments/comments.feature:25
+classpath:examples/comments/comments.feature:26
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref failed">27</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response.body == comment</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.27">23:16:29.947 classpath:examples/comments/comments.feature:27
+And match response.body == comment
+&gt;&gt; classpath:examples/comments/comments.feature:22
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+classpath:examples/comments/comments.feature:5
+classpath:examples/comments/comments.feature:6
+classpath:examples/comments/comments.feature:23
+classpath:examples/comments/comments.feature:24
+classpath:examples/comments/comments.feature:25
+classpath:examples/comments/comments.feature:26
+classpath:examples/comments/comments.feature:27
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:29]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:29]</span>
+                <span class="scenario-name">Delete Comment</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:29]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">23:16:29.875 karate.env system property was: null 
+23:16:29.933 classpath:examples/comments/comments.feature:4
+* url baseUrl
+&gt;&gt; classpath:examples/comments/comments.feature:29
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>headers headers</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">23:16:29.939 classpath:examples/comments/comments.feature:5
+* headers headers
+&gt;&gt; classpath:examples/comments/comments.feature:29
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+classpath:examples/comments/comments.feature:5
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def postId = karate.get(&#39;postId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">23:16:29.940 classpath:examples/comments/comments.feature:6
+* def postId = karate.get(&#39;postId&#39;)
+&gt;&gt; classpath:examples/comments/comments.feature:29
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+classpath:examples/comments/comments.feature:5
+classpath:examples/comments/comments.feature:6
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref failed">30</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>path &#39;comments&#39;, commentId</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.30">23:16:29.942 classpath:examples/comments/comments.feature:30
+Given path &#39;comments&#39;, commentId
+&gt;&gt; classpath:examples/comments/comments.feature:29
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+classpath:examples/comments/comments.feature:5
+classpath:examples/comments/comments.feature:6
+classpath:examples/comments/comments.feature:30
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref failed">31</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.31">23:16:29.943 classpath:examples/comments/comments.feature:31
+When method delete
+&gt;&gt; classpath:examples/comments/comments.feature:29
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+classpath:examples/comments/comments.feature:5
+classpath:examples/comments/comments.feature:6
+classpath:examples/comments/comments.feature:30
+classpath:examples/comments/comments.feature:31
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref failed">32</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 204</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.32">23:16:29.944 classpath:examples/comments/comments.feature:32
+Then status 204
+&gt;&gt; classpath:examples/comments/comments.feature:29
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+classpath:examples/comments/comments.feature:5
+classpath:examples/comments/comments.feature:6
+classpath:examples/comments/comments.feature:30
+classpath:examples/comments/comments.feature:31
+classpath:examples/comments/comments.feature:32
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref failed">33</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response == &#39;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.33">23:16:29.946 classpath:examples/comments/comments.feature:33
+And match response == &#39;&#39;
+&gt;&gt; classpath:examples/comments/comments.feature:29
+&gt;&gt; karate-config.js failed
+&gt;&gt; ReferenceError: &quot;timestamp&quot; is not defined
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl: &#39;https://gorest.co.in/public/v2&#39;,
+10:     BearerToken: &#39;e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;,
+11:     headers: {
+12:       &#39;Accept&#39;: &#39;application/json&#39;,
+13:       &#39;Content-Type&#39;: &#39;application/json&#39;,
+14:       &#39;Authorization&#39;: &#39;Bearer e582c281c7b7462e01a3a05be8f93aaa4b40dda654ceb0126ba3f538b43da610&#39;
+15:     },
+16:     userName: &#39;Juan Carlos&#39;,
+17:     userEmail: &#39;juancarlos+&#39; + timestamp + &#39;@test.com&#39;,
+18:     userStatus: &#39;active&#39;,
+19:     userGender: &#39;male&#39;,
+20:     postTitle: &#39;Post title &#39; + timestamp,
+21:     postBody: &#39;Post body &#39; + timestamp,
+22:     comment: &#39;Comment text &#39; + timestamp,
+23:     todoTitle: &#39;Todo title &#39; + timestamp,
+24:     todoStatus: &#39;pending&#39;,
+25:     todoDueOn: new Date(new Date().getTime() + 3*24*60*60*1000).toISOString().split(&#39;T&#39;)[0]
+26:   };
+27:   if (env == &#39;dev&#39;) {
+28:     // customize
+29:     // e.g. config.foo = &#39;bar&#39;;
+30:   } else if (env == &#39;e2e&#39;) {
+31:     // customize
+32:   }
+33:   karate.configure(&#39;ssl&#39;, {trustAll: true})
+34:   //karate.configure(&#39;connectTimeout&#39;, {timeout: 250000})
+35: 
+36:   return config;
+37: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;timestamp&quot; is not defined
+- &lt;js&gt;.fn(Unnamed:17)
+
+classpath:examples/comments/comments.feature:4
+classpath:examples/comments/comments.feature:5
+classpath:examples/comments/comments.feature:6
+classpath:examples/comments/comments.feature:30
+classpath:examples/comments/comments.feature:31
+classpath:examples/comments/comments.feature:32
+classpath:examples/comments/comments.feature:33
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
